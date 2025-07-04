@@ -43,14 +43,15 @@ ssconsumer-sdk/
 │   ├── android/             # Android implementation
 │   ├── ios/                 # iOS implementation
 │   └── lib/                 # Dart source code
-└── docs/                    # Documentation
-    ├── android-integration.md  # Android integration guide
-    └── ios-integration.md      # iOS integration guide
+# Each submodule contains its own documentation
 ```
 
 ## Getting Started
 
-Please refer to the platform-specific integration guides in the `docs` directory for detailed instructions on how to integrate the SDK into your native application.
+Please refer to the README files in each submodule for detailed instructions on how to integrate the SDK into your application:
+
+- [Android SDK Documentation](/ssconsumer-sdk-android/README.md)
+- [iOS SDK Documentation](/ssconsumer-sdk-ios/README.md)
 
 For cross-platform frameworks, choose the appropriate framework bridge for your application:
 
