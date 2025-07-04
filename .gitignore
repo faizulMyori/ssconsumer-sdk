@@ -1,5 +1,8 @@
-android/
-flutter/
-ios/
-ionic/
-react-native/
+# Ignore any non-submodule files that might be left over
+# The actual SDK code is now in submodules
+
+# Local development files
+.DS_Store
+.idea/
+.vscode/
+*.log

@@ -13,9 +13,11 @@ This SDK provides NFC functionality for Android and iOS applications to interact
 
 ## Framework Bridges
 
-This repository now includes bridges for integrating the MyORI SmartSecure NFC SDK with various cross-platform frameworks:
+This repository now includes bridges for integrating the MyORI SmartSecure NFC SDK with various cross-platform frameworks, organized as submodules:
 
-- [Ionic/Capacitor Plugin](/ionic) - For Ionic applications using Capacitor
+- [Ionic/Capacitor Plugin](/ssconsumer-sdk-ionic) - For Ionic applications using Capacitor
+- [React Native Plugin](/ssconsumer-sdk-react-native) - For React Native applications
+- [Flutter Plugin](/ssconsumer-sdk-flutter) - For Flutter applications
 
 See the [Framework Bridges](/framework-bridges.md) document for a detailed overview of all available bridges.
 
@@ -23,16 +25,24 @@ See the [Framework Bridges](/framework-bridges.md) document for a detailed overv
 
 ```
 ssconsumer-sdk/
-├── android/                 # Android SDK files
+├── ssconsumer-sdk-android/  # Android SDK files (submodule)
 │   ├── src/                 # Source code
 │   ├── example/             # Example Android application
 │   └── build.gradle         # Android build configuration
-├── ios/                     # iOS SDK files
+├── ssconsumer-sdk-ios/      # iOS SDK files (submodule)
 │   ├── Sources/             # Source code
 │   ├── Example/             # Example iOS application
 │   └── Package.swift        # Swift Package Manager configuration
-├── ionic/                   # Ionic/Capacitor plugin
+├── ssconsumer-sdk-ionic/    # Ionic/Capacitor plugin (submodule)
 │   └── capacitor/           # Capacitor plugin implementation
+├── ssconsumer-sdk-react-native/ # React Native plugin (submodule)
+│   ├── android/             # Android implementation
+│   ├── ios/                 # iOS implementation
+│   └── src/                 # JavaScript/TypeScript source
+├── ssconsumer-sdk-flutter/  # Flutter plugin (submodule)
+│   ├── android/             # Android implementation
+│   ├── ios/                 # iOS implementation
+│   └── lib/                 # Dart source code
 └── docs/                    # Documentation
     ├── android-integration.md  # Android integration guide
     └── ios-integration.md      # iOS integration guide
@@ -51,7 +61,15 @@ npm install @myori/capacitor-nfc
 npx cap sync
 ```
 
-See the [Ionic Plugin README](/ionic/README.md) for detailed documentation.
+See the [Ionic Plugin README](/ssconsumer-sdk-ionic/README.md) for detailed documentation.
+
+### React Native
+
+Refer to the [React Native Plugin README](/ssconsumer-sdk-react-native/README.md) for installation and usage instructions.
+
+### Flutter
+
+Refer to the [Flutter Plugin README](/ssconsumer-sdk-flutter/README.md) for installation and usage instructions.
 
 ## NDEF Data Format Requirements
 
@@ -69,4 +87,4 @@ This SDK is proprietary and confidential. Unauthorized copying, transferring or 
 
 ## Support
 
-For any questions or support requests, please contact [support@myorismartssecure.com](mailto:support@myorismartssecure.com).
+For any questions or support requests, please contact [support@myori.my](mailto:support@myori.my).
