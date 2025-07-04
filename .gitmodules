@@ -1,0 +1,15 @@
+[submodule "ssconsumer-sdk-android"]
+	path = ssconsumer-sdk-android
+	url = https://github.com/faizulMyori/ssconsumer-sdk-android
+[submodule "ssconsumer-sdk-ios"]
+	path = ssconsumer-sdk-ios
+	url = https://github.com/faizulMyori/ssconsumer-sdk-ios
+[submodule "ssconsumer-sdk-flutter"]
+	path = ssconsumer-sdk-flutter
+	url = https://github.com/faizulMyori/ssconsumer-sdk-flutter
+[submodule "ssconsumer-sdk-react-native"]
+	path = ssconsumer-sdk-react-native
+	url = https://github.com/faizulMyori/ssconsumer-sdk-react-native
+[submodule "ssconsumer-sdk-ionic"]
+	path = ssconsumer-sdk-ionic
+	url = https://github.com/faizulMyori/ssconsumer-sdk-ionic
